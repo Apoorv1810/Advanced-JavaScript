@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Assignment 1</title>
+    <style>
+        img {
+            position: relative;
+            height: 350px;
+            width: 350px;
+            left: 38%;
+            top: 40%;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="text-align: center;">Image Slider</h1>
+    <img name="slider">
+</body>
+
+<script type="text/javascript">
+    var loop = 0;
+    var imageArray = [];
+    var time = 3000;
+
+    imageArray[0] = "images/flower1.jpg";
+    imageArray[1] = "images/flower2.jpg";
+    imageArray[2] = "images/sunflower.jpg";
+    imageArray[3] = "images/lotus.jpg";
+    imageArray[4] = "images/tulips.jpg";
+
+    function shift() {
+        document.slider.src = imageArray[loop];
+        if (loop < imageArray.length - 1) {
+            loop++;
+        } else {
+            loop = 0;
+        }
+
+        setTimeout("shift()", time);
+    }
+
+    window.onload = shift;
+</script>
+
+</html>
