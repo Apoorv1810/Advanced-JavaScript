@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Registration Form</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <style>
+        h1 {
+            text-align: center;
+            color: darkcyan;
+            background-color: cyan;
+        }
+        
+        fieldset {
+            margin-left: 35%;
+            margin-right: 42.5%;
+            background: radial-gradient(dimgrey, white);
+            box-shadow: 15px 15px dimgrey;
+        }
+        
+        table {}
+        
+        button {
+            color: darkslategray;
+            border-radius: 5px;
+            background: snow;
+        }
+        
+        form {
+            padding: 10px 10px 10px 10px;
+        }
+        
+        label {
+            border-style: groove;
+            border-radius: 5px;
+            border-color: white;
+            background: lightskyblue;
+            color: darkslategray;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>CPR Training Registration</h1>
+    <fieldset>
+        <legend> Information</legend>
+        <table border="5px blue">
+            <tr>
+                <td>
+                    <form name="myForm" onsubmit="return form_validate()" action="anchor.html">
+                        <!--  -->
+
+                        <label for="fname">First Name </label>
+                        <input type="text" placeholder="First Name" id="fname" onblur=validate1()> <br> <br>
+
+                        <label for="lname">Last Name </label>
+                        <input type="text" placeholder="Last Name" id="lname" onblur=validate2()> <br> <br>
+
+                        <label for="tarea">Why do you want to join?</label> <br>
+                        <textarea name="Thoughts" id="tarea" cols="30" rows="10" onblur=validate3()></textarea> <br><br>
+
+                        <label for="bgo">Blood Group </label>
+                        <select name="Blood Group" id="bgo">
+                        <option value="A+">A+</option>
+                        <option value="A-">A-</option>
+                        <option value="B+">B+</option>
+                        <option value="B-">B-</option>
+                        <option value="O+">O+</option>
+                        <option value="O-">O-</option>
+                        <option value="AB+">AB+</option>
+                        <option value="AB-">AB-</option>
+                        </select> <br><br>
+
+                        <label for="dt">Date of Birth </label>
+                        <input type="date" id="dt" max="2003-12-31"> <br><br>
+
+                        <label for="email">Email </label>
+                        <input type="email" id="email" onblur=validate5()> <br><br>
+
+                        <label>Enter your highest education qualification </label><br>
+                        <input type="radio" id="1" name="education">
+                        <label for="1">PhD</label><br>
+                        <input type="radio" id="2" name="education">
+                        <label for="2">Post-Graduation</label><br>
+                        <input type="radio" id="3" name="education">
+                        <label for="3">Graduate</label><br>
+                        <input type="radio" id="4" name="education">
+                        <label for="4">High School</label><br><br>
+
+                        <input type="submit" value="submit">
+
+                        <button type="reset" style="margin-left: 10px;">reset</button>
+
+                    </form>
+                </td>
+            </tr>
+        </table>
+    </fieldset>
+</body>
+
+<script src="validate.js"></script>
+
+</html>
