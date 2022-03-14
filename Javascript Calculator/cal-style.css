@@ -1,0 +1,59 @@
+body {
+    font-size: 20px;
+    text-align: center;
+    background-image: -webkit-linear-gradient(115deg, blue, cyan);
+    background-size: 100%;
+    /* position: relative; */
+}
+
+.input[type="button"] {
+    background-color: palevioletred;
+    color: black;
+    width: 100%;
+    border: 2px solid black;
+    font-weight: 600;
+    padding: 16px;
+    cursor: pointer;
+}
+
+.ui {
+    display: flex;
+}
+
+input[type="text"] {
+    background-color: whitesmoke;
+    color: black;
+    width: 88%;
+    border: 2px solid black;
+    font-weight: 600;
+    padding: 10px;
+    cursor: pointer;
+}
+
+table {
+    border: 4px solid rgb(0, 0, 0);
+    background-color: cornsilk;
+    border-radius: 7px;
+    height: 400px;
+}
+
+input[type="button"]:hover {
+    background-color: bisque;
+    border: 1px solid rgb(161, 47, 255)
+}
+
+.clear:hover {
+    background-color: red !important;
+}
+
+.heading {
+    text-align: center;
+}
+
+.history {
+    border: 4px solid black;
+    box-shadow: rgb(23, 23, 24, 0.7);
+    background-color: azure;
+    width: 40%;
+    text-align: center;
+}
